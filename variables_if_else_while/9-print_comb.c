@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	char num;
+	int num;
 
 	num = 48; /*demical for 0 */
 	while (num <= 57)/* demical for 9 */

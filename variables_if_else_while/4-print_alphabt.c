@@ -10,13 +10,13 @@
  */
 int main(void)
 {
-	char bet = 'a'
+	int bet = 'a';
 
-		while (bet < = 'z')
+		while (bet <= 'z')
 		{
 			if (bet == 'q' || bet == 'e')
 			{
-				bet = bet + 1
+				bet = bet + 1;
 			}
 			else
 			{

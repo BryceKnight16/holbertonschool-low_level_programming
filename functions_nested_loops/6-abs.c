@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * _abs returns absolute value of a number
- * @a: An integre input
- *  Return: Absolut value
+ *_abs -prints absolute value of a number
+ *@a: An integre input
+ *trying to make betty happy
+ *Return: Absolut value
  */
 int _abs(int a)
 {

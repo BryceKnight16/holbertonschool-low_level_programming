@@ -30,8 +30,14 @@ void puts2(char *str)
 
 	while (str[i] != '\0' && i < _strlen(str))
 	{
-	    _putchar(str[i]);
-	    i += 2;
+		_putchar(str[i]);
+		i += 2;
+	}
+
+	if (i % 2 != 0)
+	{
+		i -= 1;
+		_putchar(str[i]);
 	}
 
 	_putchar('\n');

@@ -9,14 +9,8 @@
 
 int main(int argc, char **argv)
 {
-	int i;
-
-	i = 0;
-
-	while (i <= argc)
-	{
-		printf("%s\n", (argv[i]));
-		break;
-	}
+	argc = argc;
+	
+	printf("%s\n", argv[0]);
 	return (0);
 }

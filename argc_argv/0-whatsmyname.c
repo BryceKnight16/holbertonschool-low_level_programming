@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  * main - print name of program
  * @argc: argument counter
@@ -7,10 +7,8 @@
  * Return: 0 on success
  */
 
-int main(int argc, char **argv)
+int main(int argc __attribute__((unused)), char **argv)
 {
-	argc = argc;
-
 	printf("%s\n", argv[0]);
 	return (0);
 }

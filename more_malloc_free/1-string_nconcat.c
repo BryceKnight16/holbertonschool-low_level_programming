@@ -73,13 +73,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = b;
 	}
 
-	nconcat = malloc(sizeof(*nconcat) * (a + n));
+	nconcat = malloc(sizeof(*nconcat) * (a + n + 1));
 	if (nconcat == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 	_strncpy(nconcat, s1, a);
 	_strncpy(&nconcat[a], s2, n);
-	nconcat[a+n] = '\0';
-	return(nconcat);
+	nconcat[a + n] = '\0';
+	return (nconcat);
 }

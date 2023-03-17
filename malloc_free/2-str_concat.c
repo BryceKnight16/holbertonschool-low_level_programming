@@ -84,5 +84,5 @@ char *str_concat(char *s1, char *s2)
 	_strcpy(new, s1);
 	_strcpy(new + len_s1, s2);
 
-	return(new);
+	return (new);
 }

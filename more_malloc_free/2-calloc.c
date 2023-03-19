@@ -2,6 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * _calloc - Allocates mem for an array using malloc
+ * @nmemb: Number of elements to allocate mem for
+ * @size: Size of each element in bytes
+ *
+ * Return: Pointer to the allocated memory or NULL
+ */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 
@@ -9,7 +17,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (nmemb == 0 || size == 0)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	ptr = malloc(nmemb * size);

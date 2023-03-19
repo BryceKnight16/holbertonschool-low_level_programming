@@ -24,6 +24,15 @@ int _strlen(char *str)
 	return (len);
 }
 
+/**
+ * _strncpy - Copy a string, up to a certain number of characters.
+ * @dest: The destination buffer.
+ * @src: The source string to copy from.
+ * @n: The maximum number of characters to copy.
+ *
+ * Return: The destination buffer.
+ */
+
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i = 0;
@@ -48,8 +57,15 @@ char *_strncpy(char *dest, char *src, int n)
 	return (dest);
 }
 
-
-
+/**
+ * string_nconcat - Concatenate two strings, up to a certain number of
+ * characters from the second string.
+ * @s1: The first string.
+ * @s2: The second string.
+ * @n: The maximum number of characters to take from @s2.
+ *
+ * Return: The concatenated string.
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *nconcat;

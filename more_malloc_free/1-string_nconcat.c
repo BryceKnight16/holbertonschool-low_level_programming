@@ -7,6 +7,7 @@
  * @str: The string to calculate the length of.
  * Return: The length of the string.
  */
+
 int _strlen(char *str)
 {
 	int len = 0;
@@ -28,7 +29,7 @@ int _strlen(char *str)
  * _strncpy - Copy a string, up to a certain number of characters.
  * @dest: The destination buffer.
  * @src: The source string to copy from.
- * @n: The maximum number of characters to copy.
+ * @n: The max number of characters to copy.
  *
  * Return: The destination buffer.
  */
@@ -62,8 +63,7 @@ char *_strncpy(char *dest, char *src, int n)
  * characters from the second string.
  * @s1: The first string.
  * @s2: The second string.
- * @n: The maximum number of characters to take from @s2.
- *
+ * @n: The max number of characters to take from.
  * Return: The concatenated string.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)

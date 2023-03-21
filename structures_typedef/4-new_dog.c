@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 #include "dog.h"
 
 /**
@@ -40,7 +39,14 @@ char *_strdup(char *str)
 
 	return (dup_str);
 }
-
+/**
+ * new_dog - create a new dog
+ * @name: the name of the dog
+ * @age: the age of the dog
+ * @owner: the owner of the dog
+ *
+ * Return: pointer to the new dog or NULL on fail
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;

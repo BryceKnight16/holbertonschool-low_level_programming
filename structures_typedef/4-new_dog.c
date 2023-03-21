@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #include "dog.h"
 
 /**
@@ -8,6 +9,7 @@
  * @str: string to duplicate
  * Return: duplicated string with malloc
  */
+
 char *_strdup(char *str)
 {
 	char *dup_str;
@@ -39,11 +41,15 @@ char *_strdup(char *str)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *dog = malloc(sizeof(dog_t));
+	dog_t *dog;
+
+	dog = malloc(sizeof(dog_t));
+
 	if (dog == NULL)
 	{
 		return NULL;
 	}
+
 	dog->name = _strdup(name);
 	if (dog->name == NULL)
 	{
@@ -51,6 +57,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	dog->age = age;
+
 	dog->owner = _strdup(owner);
 
 	if (dog->owner == NULL)
@@ -60,5 +67,4 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	return(dog);
-	free(dog);
 }

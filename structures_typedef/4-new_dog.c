@@ -36,6 +36,8 @@ char *_strdup(char *str)
 		dup_str[len] = str[len];
 		len = len + 1;
 	}
+	dup_str[len] = '\0';
+	
 	return (dup_str);
 }
 

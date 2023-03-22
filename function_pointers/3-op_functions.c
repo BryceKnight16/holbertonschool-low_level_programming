@@ -35,11 +35,3 @@ int op_mod(int a, int b)
 
 	return(a % b);
 }
-int op_pow(int num, int exp)
-{
-	if (exp == 0)
-	{
-		return(1);
-	}
-	return(num * op_pow (num, exp -1)); 
-}

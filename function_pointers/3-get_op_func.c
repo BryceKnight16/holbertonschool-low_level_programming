@@ -15,7 +15,6 @@ int (*get_op_func(char *s))(int, int)
 		{"*", op_mul},
 		{"/", op_div},
 		{"%", op_mod},
-		{"^", op_pow},
 		{NULL, NULL}
 	};
 	int i;

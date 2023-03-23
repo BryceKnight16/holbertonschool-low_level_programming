@@ -1,7 +1,11 @@
 #ifndef CALC_H
 #define CALC_H
 
-
+/**
+ *struct op - Struct op
+ *@op: name of operator
+ *@f: a func pointer to the op
+ */
 typedef struct op
 {
 	char *op;

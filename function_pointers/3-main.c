@@ -6,10 +6,10 @@
 
 /**
  * int main - a function that makes a calculator with user input
- * @num1: first input for calc
- * @num2: second input for calc
- * @result: the resukt of the calc
- * Return : result
+ *@argc: number of arguments on command line
+ *@argv: array of char * containing arguments on com line
+ *@result: the result of the calc
+ * Return : 0
  */
 int main(int argc, char **argv)
 {

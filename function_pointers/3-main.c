@@ -3,7 +3,16 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int main (int argc, char **argv)
+
+/**
+ *
+ *int main - a function that makes a calculator with user input
+ *@num1: first input for calc
+ *@num2: second input for calc
+ *@result: the resukt of the calc
+ *Return: result
+ */
+int main(int argc, char **argv)
 {
 	int num1;
 	int num2;

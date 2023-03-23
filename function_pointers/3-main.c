@@ -5,11 +5,10 @@
 
 
 /**
- * int main - a function that makes a calculator with user input
+ *main - a function that makes a calculator with user input
  *@argc: number of arguments on command line
  *@argv: array of char * containing arguments on com line
- *@result: the result of the calc
- * Return : 0
+ * Return: 0
  */
 int main(int argc, char **argv)
 {

@@ -1,6 +1,13 @@
 #include "function_pointers.h"
 #include <stdio.h>
 
+/**
+ * int_index - a function that searches for a int in a array
+ * @size is the number of elements in the array
+ * @array is a pointer to the array
+ * @cmp is a pointer to the function that compares
+ * Return: an int or -1 if edge condtions are met
+ */
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
@@ -22,7 +29,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		if (cmp(array[i]) != 0)
 		{
-			return(i);
+			return (i);
 		}
 		i = i + 1;
 	}

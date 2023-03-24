@@ -3,9 +3,9 @@
 
 /**
  * int_index - a function that searches for a int in a array
- * @size is the number of elements in the array
- * @array is a pointer to the array
- * @cmp is a pointer to the function that compares
+ * @size: is the number of elements in the array
+ * @array: is a pointer to the array
+ * @cmp: is a pointer to the function that compares
  * Return: an int or -1 if edge condtions are met
  */
 

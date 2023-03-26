@@ -17,7 +17,7 @@ void print_char(va_list ap)
 
 /**
  *print_int - prints an int
- *@args: va_list type to iterate through variable arguments
+ *@ap: va_list type
  *Return: void
  */
 
@@ -28,7 +28,7 @@ void print_int(va_list ap)
 
 /**
  *print_float - prints a float
- *@args: va_list type to iterate through variable arguments
+ *@ap: va_list type
  *Return: void
  */
 
@@ -39,7 +39,7 @@ void print_float(va_list ap)
 
 /**
  *print_str - prints a string
- *@args: va_list type to iterate through variable arguments
+ *@ap: va_list type
  *Return: void
  */
 

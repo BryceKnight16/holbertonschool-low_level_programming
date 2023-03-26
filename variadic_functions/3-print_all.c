@@ -79,9 +79,9 @@ void print_all(const char * const format, ...)
 
 		while (check[a].op != NULL)
 		{
-			if (*check[a].op == format[i])
+			if (*(check[a].op) == format[i])
 			{
-				(check[a].f)(ap);
+				check[a].f(ap);
 
 				if (format[i + 1] != '\0')
 				{

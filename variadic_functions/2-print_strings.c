@@ -22,8 +22,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 
 	va_start(ap, n);
-
-       	i = 0;
+	i = 0;
 
 	while (i < n)
 	{

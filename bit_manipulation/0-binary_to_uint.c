@@ -3,7 +3,7 @@
 
 /**
  * is_binary - checks if char is 0 or 1
- * @c: the character
+ * @ch: the character
  * Return: 1 for  binary char, 0 for other.
  */
 

@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <stdio.h>
+
 /**
  *list_len - counts the elements in list_t
  *@h: pointer to list_t data type

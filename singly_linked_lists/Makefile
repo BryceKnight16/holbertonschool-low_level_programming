@@ -14,15 +14,15 @@ SRC1 = 	1-list_len.c 1-main.c
 
 NAME1 = 1-test
 
-SRC2 = 	2-add_mode.c 2-main.c
+SRC2 = 	2-add_node.c 0-print_list.c 2-main.c
 
 NAME2 = 2-test
 
-SRC3 = 	3-add_mode_end.c 3-main.c
+SRC3 = 	3-add_node_end.c 0-print_list.c 3-main.c
 
 NAME3 = 3-test
 
-SRC4 = 	4-free_list.c 4-main.c
+SRC4 = 	4-free_list.c 3-add_node_end.c 0-print_list.c 4-main.c
 
 NAME4 = 4-test
 

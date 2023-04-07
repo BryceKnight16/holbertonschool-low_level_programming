@@ -31,7 +31,7 @@ unsigned int binary_to_uint(const char *b)
 	index = 0;
 	result = 0;
 
-	if (b[index] == NULL)
+	if (b == NULL)
 	{
 		return (0);
 	}

@@ -27,7 +27,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	storedlets = malloc(sizeof(* storedlets) *letters);
+	storedlets = malloc(sizeof(*storedlets) * letters);
 
 	if (storedlets == NULL)
 	{

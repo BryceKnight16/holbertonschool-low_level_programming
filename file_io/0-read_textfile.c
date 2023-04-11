@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * read_textfile -  reads a text file and prints to the POSIX standard output
+ * @filename: name of the file
+ * @letters: letters it could read and print
+ *
+ * Return: the letters it could read and print, or 0
+ */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *storedlets;
@@ -19,9 +27,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	storedlets = malloc(sizeof(*storedlets) *letters);
+	storedlets = malloc(sizeof(* storedlets) *letters);
 
-	if(storedlets == NULL)
+	if (storedlets == NULL)
 	{
 		return (0);
 	}
@@ -29,9 +37,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	let_counter = read(fd, storedlets, letters);
 
 	if (let_counter == -1)
-		{
-			return (0);
-		}
+	{
+		return (0);
+	}
 
 	printed_let = write(STDOUT_FILENO, storedlets, let_counter);
 

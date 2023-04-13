@@ -1,11 +1,11 @@
 #include "hash_tables.h"
 
 /**
- * make_node - a helper function that makes a new node in the hash table
- *@key: key of the new node
- *@vaule: vaule of the key in the new node
+ * make_node - Create a new hash node.
+ * @key: Key for the new node.
+ * @value: Value for the new node.
  *
- *Return: pointer to the new node in the hash table
+ * Return: Pointer to the new hash node, or NULL on failure.
  */
 
 hash_node_t *make_node(const char *key, const char *value)
@@ -34,12 +34,14 @@ hash_node_t *make_node(const char *key, const char *value)
 }
 
 /**
- * hash_table_set - add elements to hash table
- * @ht: hash table
- * @key: key
- * @value: value associeted to the key to add
- * Return: 0 fail, 1 success
+ * hash_table_set - Add elements to a hash table.
+ * @ht: Hash table.
+ * @key: Key for the element to add.
+ * @value: Value for the element to add.
+ *
+ * Return: 0 on failure, 1 on success.
  */
+
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;

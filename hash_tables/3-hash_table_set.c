@@ -1,9 +1,9 @@
 /**
- * make_node - Create a new node in hash table.
+ * make_node - Create a new hash node.
  * @key: Key for the new node.
  * @value: Value for the new node.
  *
- * Return: Pointer to the new node in hash table, or NULL on failure.
+ * Return: Pointer to the new hash node, or NULL on failure.
  */
 hash_node_t *make_node(const char *key, const char *value)
 {
@@ -53,11 +53,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		return (0);
 	}
-	if (new_node != NULL)
+	if (ht->array[index] != NULL)
 	{
-		if (strcmp(key, new_node->key) == 0)
+		if (strcmp(key, ht->array[index]->key) == 0)
 		{
-			new_node->value =(char *)value;
+			ht->array[index]->value =(char *)value;
 			return (1);
 		}
 	}

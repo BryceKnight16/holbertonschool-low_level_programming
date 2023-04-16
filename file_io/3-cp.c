@@ -44,12 +44,12 @@ int main(int argc, char *argv[])
 
 	if (close(src_fd) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd"), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd "), exit(100);
 	}
 
 	if (close(dest_fd) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd"), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd "), exit(100);
 	}
 
 	return (0);

@@ -13,12 +13,12 @@ void print_array(int *array, size_t size)
 
 	printf("Searching in array: ");
 
-	while (i < size)
+	while (i < size - 1)
 	{
 		printf("%d, ", array[i]);
 		i = i + 1;
 	}
-	printf("\n");
+	printf("%d\n", array[i]);
 }
 /**
  * binary_search -  on a sorted integer array to find a specified value.
@@ -43,7 +43,7 @@ int binary_search(int *array, size_t size, int value)
 	while (left <= right)
 	{
 		size_t mid = (left + right) / 2;
-
+		print_array(&array[left], right - left + 1);
 		if (array[mid] == value)
 		{
 			return (mid);
@@ -56,7 +56,6 @@ int binary_search(int *array, size_t size, int value)
 		{
 			right = mid - 1;
 		}
-		print_array(array, size);
 	}
 	return (-1);
 }

@@ -15,7 +15,7 @@ void print_array(int *array, size_t size)
 
 	while (i < size)
 	{
-		printf("%d ", array[i]);
+		printf("%d, ", array[i]);
 		i = i + 1;
 	}
 	printf("\n");

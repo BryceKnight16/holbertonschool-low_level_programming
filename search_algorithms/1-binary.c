@@ -1,8 +1,16 @@
 #include <stdio.h>
 
+/**
+ * print_array - prints array.
+ *
+ * @array: Pointer to the integer array.
+ * @size: The number of elements in the array.
+ */
+
 void print_array(int *array, size_t size)
 {
 	size_t i = 0;
+
 	printf("Array: ");
 
 	while (i < size)
@@ -12,6 +20,14 @@ void print_array(int *array, size_t size)
 	}
 	printf("\n");
 }
+/**
+ * binary_search -  on a sorted integer array to find a specified value.
+ *
+ * @array: Pointer to the sorted integer array.
+ * @size: The number of elements in the array.
+ * @value: The value to be searched in the array.
+ * Return: The index of the value if found, or -1 if not found.
+ */
 
 int binary_search(int *array, size_t size, int value)
 {
@@ -21,12 +37,13 @@ int binary_search(int *array, size_t size, int value)
 
 	if (array == NULL || size == 0)
 	{
-	    return (-1);
+		return (-1);
 	}
 
 	while (left <= right)
 	{
 		size_t mid = (left + right) / 2;
+
 		if (array[mid] == value)
 		{
 			return (mid);
